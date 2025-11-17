@@ -222,7 +222,7 @@ nav ul button {
 
 .feature-element-header {
   width: 551px;
-  height: 99px;
+  height: 199px;
   margin-top: 80px;
 }
 
@@ -249,24 +249,26 @@ nav ul button {
 .feature-img {
   width: 282px;
   height: 304px;
+  border-radius: 4px;
 }
 
 .feature-description {
-  background-color: black;
-  opacity: 0.2;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
   position: absolute;
   width: 100%;
   top: 230px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 75px;
 }
 
 .feature-description i {
-  width: 50px;
-  height: 50px;
+  width: 20px;
+  height: 20px;
   color: white;
-  z-index: 3;
+  padding-right: 20px;
 }
 
 .feature-block-detail img {
@@ -276,4 +278,52 @@ nav ul button {
 
 .feature-block-detail {
   display: flex;
+}
+
+.feature-block-left {
+  padding-left: 20px;
+  gap: 15px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature-block-left h4 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.feature-block-detail {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.feature-block-detail h5 {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.feature-element-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+.feature-element-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.feature-element-button button {
+  width: 204px;
+  height: 50px;
+  background-color: #3775ed;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
 }
