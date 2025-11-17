@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Aeonik", sans-serif;
+  background-color: black;
+  color: white;
+  padding: 0 40px;
+  height: 5347px;
+  width: 1440px;
+}
+
+.header {
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 118px;
+}
+
+.logo {
+  margin-top: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin-top: 35px;
+  padding: 0;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul button {
+  width: 204px;
+  height: 50px;
+  padding: 16px 8px;
+  border: 1.5px solid white;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.welcome-element {
+  width: 100%;
+  margin: auto;
+  border-radius: 5px;
+  margin: 96px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.welcome-element-text {
+  width: 917px;
+}
+
+.welcome-element-text h1 {
+  font-weight: bold;
+  font-size: 65px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.welcome-element-text h4 {
+  text-align: center;
+  font-weight: 400;
+  font-style: 22px;
+  color: #e5e5e5;
+  margin-top: 40px;
+}
+
+.welcome-element-button {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.welcome-element-button button:first-child {
+  width: 204px;
+  height: 50px;
+  background-color: #3775ed;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+}
+
+.welcome-element-button button:last-child {
+  width: 204px;
+  height: 50px;
+  background-color: black;
+  border: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.welcome-element-img {
+  width: 1200px;
+  height: 514px;
+  margin: auto;
+}
+
+.content-element {
+  margin-top: 190px;
+  color: white;
+}
+
+.content-element-text h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.content-element-text h4 {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.5;
+  text-align: center;
+  color: #e5e5e5;
+}
+
+.content-element-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 118px;
+  margin-top: 40px;
+}
+
+.content-element-list .content-list-item {
+  width: 385px;
+  height: 277px;
+  background-color: #c96408;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.content-list-item .icon {
+  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
+}
+
+.content-element-list .content-list-item:nth-child(2) {
+  background-color: #7937bb; /* Màu sắc cho phần tử thứ 2 */
+  gap: 40px;
+}
+
+.content-list-item:nth-child(2) img {
+  margin-top: 30px;
+  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
+}
+
+.content-element-list .content-list-item:nth-child(3) {
+  background-color: #3775ed; /* Màu sắc cho phần tử thứ 3 */
+  gap: 40px;
+}
+
+.content-list-item:nth-child(3) img {
+  margin-top: 30px;
+  box-shadow: 0 0 8px rgb(0 0 0 / 25%);
+}
+
+.content-list-item-header {
+  width: 100%;
+  position: relative;
+}
+
+.content-list-item-header img {
+  width: 66px;
+  height: 64px;
+  position: absolute;
+  top: -24.2px;
+  left: -21px;
+}
+
+.content-list-item-header img:last-child {
+  width: 66px;
+  height: 64px;
+  position: absolute;
+  top: -24.8px;
+  left: 339px;
+}
+
+.content-element-list .content-list-item h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+  color: #fff;
+}
+.content-element-list .content-list-item h4 {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.25;
+  text-align: center;
+  color: #fff;
+}
+
+.content-element-img {
+  display: grid;
+  place-content: center;
+  margin-top: 30px;
+}
+
+.feature-element {
+  width: 100%;
+  padding: 0px 118px;
+}
+
+.feature-element-header {
+  width: 551px;
+  height: 99px;
+  margin-top: 80px;
+}
+
+.feature-element-header h2 {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 2;
+  color: #fff;
+}
+
+.feature-element-header p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 2;
+  color: #fff;
+}
+
+.feature-element-item {
+  width: 282px;
+  height: 304px;
+  position: relative;
+}
+
+.feature-img {
+  width: 282px;
+  height: 304px;
+}
+
+.feature-description {
+  background-color: black;
+  opacity: 0.2;
+  position: absolute;
+  width: 100%;
+  top: 230px;
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+}
+
+.feature-description i {
+  width: 50px;
+  height: 50px;
+  color: white;
+  z-index: 3;
+}
+
+.feature-block-detail img {
+  width: 20px;
+  height: 20px;
+}
+
+.feature-block-detail {
+  display: flex;
+}
