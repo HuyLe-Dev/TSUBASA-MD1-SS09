@@ -1,0 +1,330 @@
+/* --- CSS VARIABLES & RESET --- */
+:root {
+  --primary-color: #2dd4bf;
+  --text-dark: #1c1c1c;
+  --text-gray: #6b7280;
+  --bg-white: #ffffff;
+  --max-width: 1440px;
+  --side-padding: 135px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--bg-white);
+  color: var(--text-dark);
+}
+
+.wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--side-padding);
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* --- HEADER --- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  background: var(--text-dark);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4b5563;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--text-dark);
+  font-weight: 600;
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-signin {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.btn-signup {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 600;
+  padding: 10px 25px;
+  border: 1px solid #a5f3fc;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-signup:hover {
+  background: #f0fdfa;
+}
+
+/* --- HERO SECTION --- */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 0;
+  min-height: 80vh;
+}
+
+.hero-content {
+  width: 45%;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 14px;
+  color: var(--text-gray);
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  margin-bottom: 25px;
+  color: #000;
+}
+
+.description {
+  font-size: 18px;
+  color: var(--text-gray);
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 90%;
+}
+
+.cta-group {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.btn-get-started {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 18px 40px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  box-shadow: 0 10px 25px rgba(45, 212, 191, 0.4);
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-get-started:hover {
+  transform: translateY(-2px);
+}
+
+.play-btn {
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  color: var(--primary-color);
+  font-size: 24px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.play-btn:hover {
+  transform: scale(1.1);
+}
+
+.hero-image-wrapper {
+  width: 50%;
+  position: relative;
+}
+
+.main-img-bg {
+  background-color: #e0f2f1;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  height: 631px;
+}
+
+.main-img {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* --- FLOATING CARDS (Các thẻ trôi nổi) --- */
+.float-card {
+  position: absolute;
+  background: #fff;
+  padding: 15px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 10;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Card 1: Courses (Bên trái trên) */
+.card-courses {
+  top: 15%;
+  left: -40px;
+  padding: 10px 20px;
+}
+.icon-box-red {
+  width: 40px;
+  height: 40px;
+  background: #ff6b6b;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-box-red i {
+  color: white;
+  font-size: 32px;
+}
+
+/* Card 2: Schedules (Bên trái dưới) */
+.card-schedules {
+  bottom: 15%;
+  left: -60px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  min-width: 140px;
+}
+.schedule-lines {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 5px;
+}
+.line {
+  height: 6px;
+  border-radius: 4px;
+}
+.l1 {
+  width: 100%;
+  background: #9333ea;
+}
+.l2 {
+  width: 60%;
+  background: #fca5a5;
+}
+.l3 {
+  width: 30%;
+  background: #fca5a5;
+}
+
+/* Card 3: Active Students (Bên phải dưới) */
+.card-students {
+  bottom: 10%;
+  right: -20px;
+  padding: 15px 25px;
+  flex-direction: column;
+  align-items: center;
+}
+.avatars {
+  display: flex;
+  margin-top: 5px;
+}
+.avatars img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-left: -10px;
+}
+.avatars img:first-child {
+  margin-left: 0;
+}
+.plus-circle {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: 700;
+  border: 2px solid #fff;
+  margin-left: -10px;
+}
+
+.card-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #000;
+}
+.card-sub {
+  font-size: 10px;
+  color: #888;
+}
